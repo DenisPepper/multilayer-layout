@@ -1,0 +1,4 @@
+.header {
+    grid-row-start: header;
+    background-color: var(--color-turquoise);
+}

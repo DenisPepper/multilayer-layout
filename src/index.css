@@ -1,5 +1,30 @@
+:root {
+  --color-gray: #dddfd4;
+  --color-yellow: #fae596;
+  --color-turquoise: #3fb0ac;
+  --color-dark-blue: #173e43;
+
+}
+
 *, 
 *::after,
 *::before {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+
+}
+
+#root {
+  width: 1200px;
+  height: 100vh;
+  margin: 0 auto;
+  padding: 0 15px;
+  display: grid;
+  grid-template-rows: [header] auto [main] 1fr [footer] auto;
+  background-color: var(--color-gray);
 }
