@@ -1,4 +1,3 @@
-
 import css from './scroll-up-button.module.css';
 
 export const ScrollUpButton = () => {

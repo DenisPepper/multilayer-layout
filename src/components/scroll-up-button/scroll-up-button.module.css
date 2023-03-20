@@ -1,12 +1,16 @@
 .up {
-    width: 50px;
-    height: 25px;
     position: fixed;
     bottom: 10px;
     right: 10px ;
 }
 
 .up::before {
-    
-    content: 'up';
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-image: url('../../assets/scroll-up.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    content: '';
 }
