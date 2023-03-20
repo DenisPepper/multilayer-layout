@@ -14,17 +14,31 @@
   padding: 0;
 }
 
-body {
-  height: 100vh;
+html {
+  scroll-behavior: smooth;
+}
 
+body {
+  min-height: 100vh;
 }
 
 #root {
   width: 1200px;
-  height: 100vh;
+  height: auto;
   margin: 0 auto;
   padding: 0 15px;
   display: grid;
   grid-template-rows: [header] auto [main] 1fr [footer] auto;
   background-color: var(--color-gray);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0 none;
+  clip-path: inset(100%);
 }

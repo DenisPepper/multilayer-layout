@@ -1,0 +1,12 @@
+.up {
+    width: 50px;
+    height: 25px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px ;
+}
+
+.up::before {
+    
+    content: 'up';
+}
