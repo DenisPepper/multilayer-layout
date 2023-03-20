@@ -1,4 +1,3 @@
 .footer {
-    grid-row-start: footer;
     background-color: var(--color-turquoise);
 }
