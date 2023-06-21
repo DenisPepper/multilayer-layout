@@ -6,6 +6,23 @@
     background: rgb(255,255,255);
     background: linear-gradient(5deg, rgba(255,255,255,1) 13%, rgba(48, 255, 231, 0.2) 100%);
     overflow: hidden;
+    position: relative;
+    display: grid;
+    justify-items: center;
+}
+
+.app__title {
+    width: 60%;
+    margin: 0;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: gold;
+    text-transform: capitalize;
+    position: absolute;
+    z-index: 2;
+    top: 10%;
+    text-align: center;
+    white-space: pre-line;
 }
 
 .balls {
@@ -71,6 +88,6 @@
         transform: translateY(110vh) scale(0);
     }
     100% {
-        transform: translateY(-10vh) scale(1);
+        transform: translateY(-5vh) scale(1);
     }
 }

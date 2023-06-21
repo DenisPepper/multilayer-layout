@@ -1,7 +1,7 @@
 import './app.css';
 import React from "react";
 
-const BALLS = Array.from({length: 40});
+const BALLS = Array.from({length: 30});
 
 export const App = () => {
 
@@ -11,6 +11,7 @@ export const App = () => {
 
     return (
         <div className='app'>
+            <h1 className='app__title'>{'Танюша,\n с Днем Рождения!'}</h1>
             <div className='balls'>
                 {BALLS.map((n, i) => <span key={i} className={getClassName()} style={getStyle()}></span>)}
             </div>
