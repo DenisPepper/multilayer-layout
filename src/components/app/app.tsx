@@ -3,6 +3,7 @@ import React from "react";
 import cloud from '../../assets/tmp.png';
 import konyashik from '../../assets/tmp2.png';
 import earth from '../../assets/earth.jpg';
+import song from '../../assets/Get-A-Little-High.mp3';
 
 const BALLS = Array.from({length: 30});
 
@@ -18,16 +19,6 @@ export const App = () => {
                 <span>Танюша</span>
                 <span>Поздравляю с ДР!</span>
             </h1>
-            <ul className='sun'>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
             <div className='cloud'>
                 <img src={cloud} alt="cloud"/>
             </div>
@@ -37,8 +28,23 @@ export const App = () => {
             <div className='earth'>
                 <img src={earth} alt="earth"/>
             </div>
+            <ul className='sun'>
+                <li className='sun__ray'></li>
+                <li className='sun__ray'></li>
+                <li className='sun__ray'></li>
+                <li className='sun__ray'></li>
+                <li className='sun__ray'></li>
+                <li className='sun__ray'></li>
+                <li className='sun__ray'></li>
+                <li className='sun__ray'></li>
+            </ul>
             <div className='balls'>
                 {BALLS.map((n, i) => <span key={i} className={getClassName()} style={getStyle()}></span>)}
+            </div>
+            <div className='audio'>
+                <audio controls muted>
+                    <source src={song} type='audio/mpeg'/>
+                </audio>
             </div>
         </div>
     )

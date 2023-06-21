@@ -58,7 +58,7 @@
     animation: sunmove 120s linear infinite;
 }
 
-.sun li {
+.sun__ray {
     list-style: none;
     position: absolute;
     top: 50%;
@@ -70,35 +70,35 @@
     background-color: gold;
 }
 
-.sun li:nth-child(1) {
+.sun__ray:nth-child(1) {
     transform: translate(-50%, -50%) rotate(22.5deg);
 }
 
-.sun li:nth-child(2) {
+.sun__ray:nth-child(2) {
     transform: translate(-50%, -50%) rotate(45deg);
 }
 
-.sun li:nth-child(3) {
+.sun__ray:nth-child(3) {
     transform: translate(-50%, -50%) rotate(67.5deg);
 }
 
-.sun li:nth-child(4) {
+.sun__ray:nth-child(4) {
     transform: translate(-50%, -50%) rotate(90deg);
 }
 
-.sun li:nth-child(5) {
+.sun__ray:nth-child(5) {
     transform: translate(-50%, -50%) rotate(112.5deg);
 }
 
-.sun li:nth-child(6) {
+.sun__ray:nth-child(6) {
     transform: translate(-50%, -50%) rotate(135deg);
 }
 
-.sun li:nth-child(7) {
+.sun__ray:nth-child(7) {
     transform: translate(-50%, -50%) rotate(157.5deg);
 }
 
-.sun li:nth-child(8) {
+.sun__ray:nth-child(8) {
     transform: translate(-50%, -50%) rotate(180deg);
 }
 
@@ -265,4 +265,10 @@
         font-size: 5rem;
     }
 
+}
+
+.audio {
+    position: absolute;
+    z-index: 35;
+    bottom: 1%;
 }
