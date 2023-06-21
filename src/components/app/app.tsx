@@ -42,7 +42,7 @@ export const App = () => {
                 {BALLS.map((n, i) => <span key={i} className={getClassName()} style={getStyle()}></span>)}
             </div>
             <div className='audio'>
-                <audio controls muted>
+                <audio controls>
                     <source src={song} type='audio/mpeg'/>
                 </audio>
             </div>
