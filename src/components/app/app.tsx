@@ -2,6 +2,7 @@ import './app.css';
 import React from "react";
 import cloud from '../../assets/tmp.png';
 import konyashik from '../../assets/tmp2.png';
+import earth from '../../assets/earth.jpg';
 
 const BALLS = Array.from({length: 30});
 
@@ -15,7 +16,7 @@ export const App = () => {
         <div className='app'>
             <h1 className='app__title'>
                 <span>Танюша</span>
-                <span>C Днем Рождения!</span>
+                <span>Поздравляю с ДР!</span>
             </h1>
             <ul className='sun'>
                 <li></li>
@@ -32,6 +33,9 @@ export const App = () => {
             </div>
             <div className='konyashik'>
                 <img src={konyashik} alt="konyashik"/>
+            </div>
+            <div className='earth'>
+                <img src={earth} alt="earth"/>
             </div>
             <div className='balls'>
                 {BALLS.map((n, i) => <span key={i} className={getClassName()} style={getStyle()}></span>)}

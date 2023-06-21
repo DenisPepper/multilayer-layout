@@ -20,24 +20,29 @@
     max-width: 80%;
     margin: 0;
     padding: 0 10px;
-    color: deeppink;
-    text-transform: uppercase;
+    color: rgb(255, 255, 255);
     position: absolute;
     z-index: 20;
     top: 22%;
     text-align: center;
     white-space: pre-line;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 
 .app__title span {
-    background-color: rgba(241, 230, 200, 0.89);
+    background-color: rgb(241, 171, 5);
+    padding: 0 5px ;
 }
 
 .app__title span:first-child {
     font-size: 3rem;
-    background-color: rgba(208, 142, 166, 0.78);
+    background-color: rgb(145, 145, 232);
+    text-transform: capitalize;
     color: gold;
+}
+
+.app__title span:last-child {
+    margin-top: -15px;
 }
 
 .sun {
@@ -114,7 +119,7 @@
     border-radius: 50%;
     left: 2%;
     top: 2%;
-    animation: cloudmove 30s linear infinite;
+    animation: cloudmove 50s linear infinite;
 }
 
 @keyframes cloudmove {
@@ -235,11 +240,16 @@
         left: 10%;
         bottom: 10%;
         width: 80%;
-        animation: konyashik 30s linear infinite;
+        animation: konyashik 20s linear infinite;
         z-index: 10;
     }
 
     .app__title {
         font-size: 2rem;
     }
+}
+
+.earth {
+    position: absolute;
+    bottom: 0;
 }
