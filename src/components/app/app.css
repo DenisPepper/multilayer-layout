@@ -22,7 +22,7 @@
     text-transform: uppercase;
     position: absolute;
     z-index: 2;
-    top: 20%;
+    top: 35%;
     text-align: center;
     white-space: pre-line;
 }
@@ -37,7 +37,7 @@
     box-shadow: 0 0 50px goldenrod;
     border-radius: 50%;
     z-index: 5;
-    animation: sunmove 20s linear infinite;
+    animation: sunmove 120s linear infinite;
 }
 
 .sun li {
@@ -101,7 +101,7 @@
     border-radius: 50%;
     left: 5%;
     top: 5%;
-    animation: cloudmove 8s linear infinite;
+    animation: cloudmove 30s linear infinite;
 }
 
 @keyframes cloudmove {
