@@ -17,7 +17,7 @@
     margin: 0;
     border-radius: 20px;
     padding: 20px;
-    background-color: rgba(173, 216, 230, 0.85);
+    background-color: rgba(173, 216, 230, 0.90);
     color: deeppink;
     text-transform: uppercase;
     position: absolute;
@@ -94,6 +94,33 @@
     }
 }
 
+.cloud {
+    position: absolute;
+    width: 120px;
+    height: 60px;
+    border-radius: 50%;
+    left: 5%;
+    top: 5%;
+    animation: cloudmove 8s linear infinite;
+}
+
+@keyframes cloudmove {
+    0% {
+        transform: translate(0);
+    }
+    25% {
+        transform: translate(50px);
+    }
+    50% {
+        transform: translate(100px);
+    }
+    75% {
+        transform: translate(50px);
+    }
+    100% {
+        transform: translate(0);
+    }
+}
 
 .balls {
     display: flex;

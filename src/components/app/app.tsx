@@ -1,5 +1,6 @@
 import './app.css';
 import React from "react";
+import cloud from '../../assets/tmp.png';
 
 const BALLS = Array.from({length: 30});
 
@@ -22,6 +23,9 @@ export const App = () => {
                 <li></li>
                 <li></li>
             </ul>
+            <div className='cloud'>
+                <img src={cloud} alt="cloud"/>
+            </div>
             <div className='balls'>
                 {BALLS.map((n, i) => <span key={i} className={getClassName()} style={getStyle()}></span>)}
             </div>
