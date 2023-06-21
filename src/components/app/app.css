@@ -270,5 +270,5 @@
 .audio {
     position: absolute;
     z-index: 35;
-    bottom: 1%;
+    bottom: 30px;
 }
