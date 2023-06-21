@@ -12,19 +12,31 @@
 }
 
 .app__title {
-    min-width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    min-width: 60%;
     max-width: 80%;
     margin: 0;
-    border-radius: 20px;
-    padding: 20px;
-    background-color: rgba(173, 216, 230, 0.90);
+    padding: 0 10px;
     color: deeppink;
     text-transform: uppercase;
     position: absolute;
-    z-index: 2;
-    top: 35%;
+    z-index: 20;
+    top: 30%;
     text-align: center;
     white-space: pre-line;
+    font-size: 1.5rem;
+}
+
+.app__title span {
+    background-color: rgba(241, 230, 200, 0.89);
+}
+
+.app__title span:first-child {
+    font-size: 2rem;
+    background-color: rgb(171, 170, 253);
 }
 
 .sun {
@@ -99,8 +111,8 @@
     width: 120px;
     height: 60px;
     border-radius: 50%;
-    left: 5%;
-    top: 5%;
+    left: 2%;
+    top: 2%;
     animation: cloudmove 30s linear infinite;
 }
 
@@ -109,13 +121,13 @@
         transform: translate(0);
     }
     25% {
-        transform: translate(50px);
+        transform: translate(50%);
     }
     50% {
-        transform: translate(100px);
+        transform: translate(100%);
     }
     75% {
-        transform: translate(50px);
+        transform: translate(50%);
     }
     100% {
         transform: translate(0);
@@ -142,8 +154,8 @@
 }
 
 .ball:nth-child(even) {
-    background-color: red;
-    box-shadow: 0 0 5px darkred;
+    background-color: #54c054;
+    box-shadow: 0 0 5px #157e15;
 }
 
 .ball_option {
@@ -152,7 +164,7 @@
 }
 
 .ball_option:nth-child(even) {
-    background-color: deeppink;
+    background-color: #fd7b90;
     box-shadow: 0 0 5px red;
 }
 
@@ -169,7 +181,7 @@
 }
 
 .ball:nth-child(even):before {
-    border-bottom: 3px solid crimson;
+    border-bottom: 3px solid #106410;
 }
 
 .ball_option:before {
@@ -186,5 +198,47 @@
     }
     100% {
         transform: translateY(-5vh) scale(1);
+    }
+}
+
+.konyashik {
+    position: absolute;
+    left: 10%;
+    bottom: 2%;
+    width: 100%;
+    animation: konyashik 30s linear infinite;
+    z-index: 10;
+}
+
+.konyashik img {
+    display: block;
+    max-width: 70%;
+    height: auto;
+}
+
+@keyframes konyashik {
+    0% {
+        transform: translateY(10px) scale(1) rotate(-5deg);
+    }
+    50% {
+        transform: translateY(-10px) scale(1.1) rotate(0deg);
+    }
+    100% {
+        transform: translateY(10px) scale(1) rotate(-5deg);
+    }
+}
+
+@media (min-width: 450px) {
+    .konyashik {
+        position: absolute;
+        left: 2%;
+        bottom: 2%;
+        width: 80%;
+        animation: konyashik 30s linear infinite;
+        z-index: 10;
+    }
+
+    .app__title {
+        font-size: 2rem;
     }
 }
