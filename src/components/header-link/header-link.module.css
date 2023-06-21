@@ -1,9 +1,0 @@
-.link {
-    text-decoration: none;
-    color: var(--color-yellow);
-    font-weight: bold;
-}
-
-.link:hover {
-    text-decoration: underline;
-}
