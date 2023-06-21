@@ -238,7 +238,7 @@
     .konyashik {
         position: absolute;
         left: 10%;
-        bottom: 10%;
+        bottom: 20%;
         width: 80%;
         animation: konyashik 20s linear infinite;
         z-index: 10;
@@ -270,5 +270,5 @@
 .audio {
     position: absolute;
     z-index: 35;
-    bottom: 30px;
+    bottom: 25px;
 }
