@@ -246,10 +246,23 @@
 
     .app__title {
         font-size: 2rem;
+        right: 5%;
     }
 }
 
 .earth {
     position: absolute;
     bottom: 0;
+}
+
+@media (min-width: 700px) {
+
+    .app__title {
+        font-size: 3rem;
+    }
+
+    .app__title span:first-child {
+        font-size: 5rem;
+    }
+
 }
