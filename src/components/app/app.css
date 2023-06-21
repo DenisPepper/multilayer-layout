@@ -3,8 +3,8 @@
     max-width: 1200px;
     min-height: 480px;
     margin: 0 auto;
-    background: rgb(255,255,255);
-    background: linear-gradient(5deg, rgba(255,255,255,1) 13%, rgba(48, 255, 231, 0.2) 100%);
+    background: rgb(255, 255, 255);
+    background: linear-gradient(5deg, rgba(255, 255, 255, 1) 13%, rgba(56, 255, 219, 0.72) 100%);
     overflow: hidden;
     position: relative;
     display: grid;
@@ -12,18 +12,88 @@
 }
 
 .app__title {
-    width: 60%;
+    min-width: 70%;
+    max-width: 80%;
     margin: 0;
-    border-radius: 10px;
-    padding: 10px;
-    background-color: gold;
-    text-transform: capitalize;
+    border-radius: 20px;
+    padding: 20px;
+    background-color: rgba(173, 216, 230, 0.75);
+    color: deeppink;
+    text-transform: uppercase;
     position: absolute;
     z-index: 2;
-    top: 10%;
+    top: 20%;
     text-align: center;
     white-space: pre-line;
 }
+
+.sun {
+    position: absolute;
+    right: 5%;
+    top: 2%;
+    width: 80px;
+    height: 80px;
+    background-color: gold;
+    box-shadow: 0 0 50px goldenrod;
+    border-radius: 50%;
+    z-index: 5;
+    animation: sunmove 20s linear infinite;
+}
+
+.sun li {
+    list-style: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 120px;
+    height: 2px;
+    border-radius: 1px;
+    background-color: gold;
+}
+
+.sun li:nth-child(1) {
+    transform: translate(-50%, -50%) rotate(22.5deg);
+}
+
+.sun li:nth-child(2) {
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.sun li:nth-child(3) {
+    transform: translate(-50%, -50%) rotate(67.5deg);
+}
+
+.sun li:nth-child(4) {
+    transform: translate(-50%, -50%) rotate(90deg);
+}
+
+.sun li:nth-child(5) {
+    transform: translate(-50%, -50%) rotate(112.5deg);
+}
+
+.sun li:nth-child(6) {
+    transform: translate(-50%, -50%) rotate(135deg);
+}
+
+.sun li:nth-child(7) {
+    transform: translate(-50%, -50%) rotate(157.5deg);
+}
+
+.sun li:nth-child(8) {
+    transform: translate(-50%, -50%) rotate(180deg);
+}
+
+@keyframes sunmove {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
 
 .balls {
     display: flex;
@@ -41,7 +111,7 @@
     border-radius: 50%;
     background-color: yellow;
     box-shadow: 0 0 5px goldenrod;
-    animation: animate 15s linear infinite;
+    animation: animate 2s linear infinite;
 }
 
 .ball:nth-child(even) {
