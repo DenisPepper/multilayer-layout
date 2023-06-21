@@ -24,7 +24,7 @@
     text-transform: uppercase;
     position: absolute;
     z-index: 20;
-    top: 30%;
+    top: 22%;
     text-align: center;
     white-space: pre-line;
     font-size: 1.5rem;
@@ -35,8 +35,9 @@
 }
 
 .app__title span:first-child {
-    font-size: 2rem;
-    background-color: rgb(171, 170, 253);
+    font-size: 3rem;
+    background-color: rgba(208, 142, 166, 0.78);
+    color: gold;
 }
 
 .sun {
@@ -204,7 +205,7 @@
 .konyashik {
     position: absolute;
     left: 10%;
-    bottom: 2%;
+    bottom: 10%;
     width: 100%;
     animation: konyashik 30s linear infinite;
     z-index: 10;
