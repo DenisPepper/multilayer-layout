@@ -3,7 +3,7 @@ import React from "react";
 import cloud from '../../assets/tmp.png';
 import konyashik from '../../assets/tmp2.png';
 import earth from '../../assets/earth.jpg';
-import song from '../../assets/Get-A-Little-High.mp3';
+import song from '../../assets/Lifting-the-Veil-from-the-Braille.mp3';
 
 const BALLS = Array.from({length: 30});
 
