@@ -16,7 +16,6 @@ export const App = () => {
     return (
         <div className='app'>
             <h1 className='app__title'>
-                <span>Наташа!</span>
                 <span>Поздравляю с ДР!</span>
             </h1>
             <div className='cloud'>
